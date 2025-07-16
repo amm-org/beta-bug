@@ -1,0 +1,29 @@
+{
+  "name": "beta-issue",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amagyar-iohk/beta-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amagyar-iohk/beta-issue/issues"
+  },
+  "homepage": "https://github.com/amagyar-iohk/beta-issue#readme",
+  "description": "",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/release-notes-generator": "^14.0.3",
+    "@types/node": "^24.0.14",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "semantic-release": "^24.2.7"
+  }
+}
