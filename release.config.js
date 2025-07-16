@@ -6,7 +6,6 @@ if (branch === 'main') {
   plugins.push(
     ['@semantic-release/changelog', { changelogFile: 'CHANGELOG.md' }],
     ['@semantic-release/release-notes-generator', { preset: "conventionalcommits" }],
-    ['@semantic-release/exec', { "prepareCmd": 'npm run docs' }],
     ['@semantic-release/git', {
       assets: [
         'package.json',
