@@ -10,8 +10,7 @@ if (branch === 'main') {
       assets: [
         'package.json',
         'package-lock.json',
-        'CHANGELOG.md',
-        'docs/**/*',
+        'CHANGELOG.md'
       ],
       message: 'chore(release): release ${nextRelease.version}\n\n${nextRelease.notes}',
     }]
