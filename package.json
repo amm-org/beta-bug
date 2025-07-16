@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amagyar-iohk/beta-issue.git"
+    "url": "git+https://github.com/amm-org/beta-bug.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amagyar-iohk/beta-issue/issues"
+    "url": "https://github.com/amm-org/beta-bug/issues"
   },
-  "homepage": "https://github.com/amagyar-iohk/beta-issue#readme",
+  "homepage": "https://github.com/amm-org/beta-bug#readme",
   "description": "",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
