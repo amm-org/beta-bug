@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/amm-org/beta-bug/compare/v1.0.0...v1.1.0) (2025-07-17)
+
+### Features
+
+* subtraction ([#7](https://github.com/amm-org/beta-bug/issues/7)) ([197dd18](https://github.com/amm-org/beta-bug/commit/197dd18f84697caf400a4af3e6e4ffe31a09f343))
+
 ## 1.0.0 (2025-07-17)
 
 ### Features
