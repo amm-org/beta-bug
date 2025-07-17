@@ -35,4 +35,4 @@ jobs:
           git config --global user.name "${{ steps.import_gpg.outputs.name }}"
           git checkout beta
           git rebase main
-          git push beta
+          git push origin beta
