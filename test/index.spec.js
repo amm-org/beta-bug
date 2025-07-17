@@ -19,4 +19,16 @@ suite('test', () => {
         const result = multiply(2, 3);
         assert.equal(result, 6);
     });
+
+    it('should divide two numbers', () => {
+        const { divide } = require('../src/index.js');
+        const result = divide(6, 3);
+        assert.equal(result, 2);
+    });
+
+    it('should return NaN when dividing by zero', () => {
+        const { divide } = require('../src/index.js');
+        const result = divide(6, 0);
+        assert(isNaN(result));
+    });
 })
