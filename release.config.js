@@ -29,7 +29,6 @@ module.exports = {
   plugins: [
     ['@semantic-release/commit-analyzer', { preset: "conventionalcommits" }],
     ['@semantic-release/exec', { "prepareCmd": 'npm version ${nextRelease.version} --git-tag-version false' }],
-    ['@semantic-release/exec', { "prepareCmd": 'npm run build' }],
     ['@semantic-release/exec', { "publishCmd": 'npm publish --tag ${nextRelease.channel || "latest"} --access public' }],
     ...plugins
   ],
