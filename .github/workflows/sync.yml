@@ -19,8 +19,20 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
 
+      - uses: crazy-max/ghaction-import-gpg@v5
+        id: import_gpg
+        with:
+          gpg_private_key: ${{ secrets.BOT_GPG_PRIVATE }}
+          passphrase:  ${{ secrets.BOT_GPG_PASSWORD }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+          git_config_global: true
+          git_tag_gpgsign: false
+
       - name: Update beta
         run: |
+          git config --global user.email "${{ steps.import_gpg.outputs.email }}"
+          git config --global user.name "${{ steps.import_gpg.outputs.name }}"
           git checkout beta
           git rebase main
           git push beta
