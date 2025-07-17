@@ -7,4 +7,10 @@ suite('test', () => {
         const result = sum(2, 2);
         assert.equal(result, 4);
     });
+
+    it('should multiply two numbers', () => {
+        const { multiply } = require('../src/index.js');
+        const result = multiply(2, 3);
+        assert.equal(result, 6);
+    });
 })
