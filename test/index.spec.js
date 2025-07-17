@@ -8,6 +8,12 @@ suite('test', () => {
         assert.equal(result, 4);
     });
 
+    it('should subtract two numbers', () => {
+        const { subtract } = require('../src/index.js');
+        const result = subtract(5, 3);
+        assert.equal(result, 2);
+    })
+
     it('should multiply two numbers', () => {
         const { multiply } = require('../src/index.js');
         const result = multiply(2, 3);
